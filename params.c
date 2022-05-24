@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-void init_params(params_and_flags *params)
+void init_params(params_and_flags *params, va_list ap)
 {
 	params->unsign = 0;
 
@@ -22,4 +22,5 @@ void init_params(params_and_flags *params)
 
 	params->h_modifier = 0;
 	params->l_modifier = 0;
+	(void)ap;
 }
